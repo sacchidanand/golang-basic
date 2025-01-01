@@ -30,3 +30,18 @@ sys     0m0.490s
 bash-3.2$ go tool pprof -http=:8080 cpu.pprof
 Serving web UI on http://localhost:8080
 ----------------------------------------------------------------
+
+#Change-1
+With New changes of introducing buffered io
+
+bash-3.2$ time ./words moby.txt 
+2025/01/01 15:11:29 profile: cpu profiling enabled, cpu.pprof
+"moby.txt": 181392 words
+2025/01/01 15:11:29 profile: cpu profiling disabled, cpu.pprof
+
+real    0m0.708s
+user    0m0.036s
+sys     0m0.012s
+----------------------------------------------------------------
+
+
